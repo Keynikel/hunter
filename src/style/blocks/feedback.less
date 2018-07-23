@@ -1,0 +1,111 @@
+.feedback {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  border-top: 1px solid #E6E6E6;
+  background-color: #FAFAFA;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/logo--circle.svg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    top: -25px;
+    left: 50%;
+    margin-left: -25px;
+  }
+}
+
+.feedback__header {
+  position: relative;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 21px;
+  padding-left: 15px;
+  font-size: 2.2rem;
+  color: #291956;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    background-color: #eb0029;
+    top: 2px;
+    left: 3px;
+    transform: rotate(21deg);
+  }
+}
+
+
+.feedback__item {
+  margin: 0;
+  padding: 0;
+  margin-top: 37px;
+
+  input[type='text'],
+  input[type='email'],
+  input[type='phone'] {
+    width: 100%;
+    line-height: 1.2;
+    border: none;
+    border-bottom: 1px solid #D4D4D4;
+    background-color: transparent;
+    font-size: 1.28rem;
+    padding-bottom: 16px;
+  }
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  .feedback__agree {
+    display: block;
+    position: relative;
+    max-width: 230px;
+    margin-top: -6px;
+    padding-left: 22px;
+    font-size: 0.9rem;
+  }
+
+  .feedback__agree::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 2px;
+    background-color: @hightlight;
+  }
+
+  input[type='checkbox']:checked+.feedback__agree::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+  }
+
+  .feedback__link {
+    color: #4D4D4D;
+  }
+}
+
+.feedback__btn {
+  margin-top: 28px;
+  min-width: 260px;
+  min-height: 40px;
+  background-color: @hightlight;
+  font-size: 1.3rem;
+}

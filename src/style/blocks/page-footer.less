@@ -1,0 +1,43 @@
+.footer {
+  padding-top: 27px;
+  padding-left: 36px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  background-color: @main-color;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.footer__year {
+  position: relative;
+  padding-right: 13px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: #eb0029;
+    top: 2px;
+    right: 4px;
+    transform: rotate(22deg);
+  }
+}
+
+.footer_develper {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer__design {
+  display: inline-block;
+  width: 40px;
+  height: 6px;
+  background-image: url(../img/MATERIA.svg);
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
