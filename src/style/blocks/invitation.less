@@ -63,6 +63,11 @@
     height: 15px;
     border: none;
     border-radius: 2px;
+    border: 1px solid @hightlight;
+    cursor: pointer;
+  }
+
+  input[type='checkbox']:checked+.invitation__agree::before {
     background-color: @hightlight;
   }
 
@@ -88,4 +93,9 @@
   min-height: 40px;
   background-color: @hightlight;
   font-size: 1.3rem;
+
+  &:hover,
+  &:active {
+    background-color: @hightlight--hover;
+  }
 }
