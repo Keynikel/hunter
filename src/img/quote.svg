@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="221px" height="135px" viewBox="0 0 221 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.15">
+        <g id="T.-Hunter---LandingPage" transform="translate(-930.000000, -1708.000000)" fill="#AEDCFF" fill-rule="nonzero">
+            <g id="2-/-Services" transform="translate(130.000000, 1112.000000)">
+                <g id="4-copy-2" transform="translate(800.000000, 596.000000)">
+                    <g id="bg">
+                        <g id="quotes-lg" transform="translate(-15.000000, -60.000000)">
+                            <path d="M105,195 L0,195 L0,97.8 C0,40 35,7.4 105,0 L105,48.6 C71.1,49.8 53.7,66.2 52.8,97.8 L105,97.8 L105,195 Z M236,195 L131,195 L131,97.8 C131,40 166,7.4 236,0 L236,48.6 C202.1,49.8 184.6,66.2 183.8,97.8 L236,97.8 L236,195 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
