@@ -25,5 +25,27 @@
       <p class='competitions__desc'>Хакерские лаборатории, имитирующие IT-структуру реальных компаний</p>
       <button class='btn competitions__btn visually-hidden'>Подробнее</button>
     </li>
+    <li class='invitation invitation--sm'>
+      <h2 class='invitation__header'>Пригласить специалиста</h2>
+      <form action='#' class='invitation__form'>
+        <p class='invitation__item'>
+          <label for='invitation__name' class='visually-hidden'>Представьтесь</label>
+          <input type='text' name='invitation__name' id='invitation__name' placeholder='Представьтесь'>
+        </p>
+        <p class='invitation__item'>
+          <label for='invitation__email' class='visually-hidden'>Адрес электронной почты</label>
+          <input type='email' name='invitation__email' id='invitation__email' placeholder='Адрес электронной почты'>
+        </p>
+        <p class='invitation__item'>
+          <label for='invitation__phone' class='visually-hidden'>Контактный телефон</label>
+          <input type='tel' name='invitation__phone' id='invitation__phone' placeholder='Контактный телефон'>
+        </p>
+        <p class='invitation__item'>
+          <input type='checkbox' name='invitation__agree' id='invitation__agree'>
+          <label class='invitation__agree' for='invitation__agree'>Принимаю <a class='invitation__link' href='#'>соглашение</a> об использовании персональных данных</label>
+        </p>
+        <button class='btn invitation__btn'>Отправить</button>
+      </form>
+    </li>
   </ul>
 </section>
