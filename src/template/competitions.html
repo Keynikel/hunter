@@ -40,11 +40,13 @@
           <label for='invitation__phone' class='visually-hidden'>Контактный телефон</label>
           <input type='tel' name='invitation__phone' id='invitation__phone' placeholder='Контактный телефон'>
         </p>
-        <p class='invitation__item'>
-          <input type='checkbox' name='invitation__agree' id='invitation__agree'>
-          <label class='invitation__agree' for='invitation__agree'>Принимаю <a class='invitation__link' href='#'>соглашение</a> об использовании персональных данных</label>
-        </p>
-        <button class='btn invitation__btn'>Отправить</button>
+        <div class='invitation__wrapper'>
+          <p class='invitation__item'>
+            <input type='checkbox' name='invitation__agree' id='invitation__agree'>
+            <label class='invitation__agree' for='invitation__agree'>Принимаю <a class='invitation__link' href='#'>соглашение</a> об использовании персональных данных</label>
+          </p>
+          <button class='btn invitation__btn'>Отправить</button>
+        </div>
       </form>
     </li>
   </ul>
