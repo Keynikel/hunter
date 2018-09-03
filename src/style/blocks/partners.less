@@ -88,3 +88,31 @@
   margin-bottom: 20px;
   background-color: rgba(215, 214, 214, 0.1);
 }
+
+@media (min-width: @desktop) {
+  .partners {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .partners__header {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    font-size: 2.8rem;
+
+    &::before {
+      height: 24px;
+      top: 4px;
+      left: 6px;
+    }
+  }
+
+  .partners__lead {
+    font-size: 1.6rem;
+
+    p {
+    margin-bottom: 26px;
+    }
+  }
+}

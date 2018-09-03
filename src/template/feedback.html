@@ -13,10 +13,12 @@
       <label for='feedback__phone' class='visually-hidden'>Контактный телефон</label>
       <input type='tel' name='feedback__phone' id='feedback__phone' placeholder='Контактный телефон'>
     </p>
-    <p class='feedback__item'>
-      <input type='checkbox' name='feedback__agree' id='feedback__agree'>
-      <label class='feedback__agree' for='feedback__agree'>Принимаю <a class='feedback__link' href='#'>соглашение</a> об использовании персональных данных</label>
-    </p>
-    <button class='btn feedback__btn'>Отправить</button>
+    <div class='feedback__wrapper'>
+      <p class='feedback__item feedback__item--flex'>
+        <input type='checkbox' name='feedback__agree' id='feedback__agree'>
+        <label class='feedback__agree' for='feedback__agree'>Принимаю <a class='feedback__link' href='#'>соглашение</a> об использовании персональных данных</label>
+      </p>
+      <button class='btn feedback__btn'>Отправить</button>
+    </div>
   </form>
 </section>

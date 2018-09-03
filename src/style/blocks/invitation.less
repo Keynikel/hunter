@@ -125,19 +125,55 @@
   }
 
   .invitation--sm  {
-      display: block;
-      width: 520px;
-      min-height: 360px;
-      margin-left: 0;
-      margin-right: auto;
+    display: block;
+    padding: 60px 15px 50px;
   }
 
   .invitation__wrapper {
+    margin-top: 30px;
     display: flex;
+    align-items: center;
+
+    p, button {
+      margin: 0;
+    }
+
+    .invitation__btn {
+      min-width: 154px;
+      margin-right: 0;
+    }
   }
 
   .invitation__header {
-    text-align: center;
+    text-align: left;
     font-size: 2.8rem;
+
+    &::after {
+      width: 80px;
+    }
   }
+
+  .invitation__item {
+
+    .invitation__agree {
+      margin-top: 0px;
+      padding-left: 30px;
+      font-size: 1rem;
+    }
+
+    .invitation__agree::before {
+      top: 0px;
+      left: 4px;
+      width: 18px;
+      height: 18px;
+    }
+
+    input[type=checkbox]:checked+.invitation__agree::after {
+      top: 4px;
+      left: 9px;
+    }
+
+
+  }
+
 }

@@ -159,11 +159,13 @@
   .competitions {
     padding-left: 70px;
     padding-right: 70px;
+    margin-bottom: 21px;
   }
 
   .competitions__header {
     font-size: 2.8rem;
     margin-top: 73px;
+    margin-bottom: 35px;
     padding-left: 21px;
 
     &::before {
@@ -175,8 +177,21 @@
   }
 
   .competitions__item {
-    width: 260px;
-    margin-left: 0;
-    margin-right: auto;
+    margin: 0;
+    max-width: 100%;
   }
+
+  .invitation--sm  {
+    grid-column: 2 / span 2;
+  }
+
+  .competitions__list {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(440px, auto);
+
+  }
+
+
 }

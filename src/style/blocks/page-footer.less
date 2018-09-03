@@ -32,13 +32,71 @@
   }
 }
 
-.footer__design {
-  display: inline-block;
-  width: 40px;
-  height: 6px;
-  background-image: url(../img/MATERIA.svg);
-  background-size: 100%;
-  background-position: top center;
-  background-repeat: no-repeat;
-  vertical-align: middle;
+@media (min-width: @desktop) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 27px;
+    padding-bottom: 29px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .footer_develper {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  .footer__dev {
+    display: inline-block;
+    width: 84px;
+    height: 30px;
+    font-size: 0;
+    background-image: url(../img/media-bay.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .footer__year {
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    &::after {
+      height: 12px;
+      top: 2px;
+      right: 2px;
+    }
+  }
+}
+
+@media (min-width: @large) {
+  .footer {
+    padding-top: 38px;
+    padding-bottom: 43px;
+    padding-left: 92px;
+    padding-right: 87px;
+  }
+
+  .footer_develper {
+    font-size: 1.6rem;
+  }
+
+  .footer__year {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+
+    &::after {
+      height: 12px;
+      top: 2px;
+      right: 2px;
+    }
+  }
+
+  .footer__dev {
+    width: 100px;
+  }
 }
