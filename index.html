@@ -292,11 +292,13 @@
       <label for='feedback__phone' class='visually-hidden'>Контактный телефон</label>
       <input type='tel' name='feedback__phone' id='feedback__phone' placeholder='Контактный телефон'>
     </p>
-    <p class='feedback__item'>
-      <input type='checkbox' name='feedback__agree' id='feedback__agree'>
-      <label class='feedback__agree' for='feedback__agree'>Принимаю <a class='feedback__link' href='#'>соглашение</a> об использовании персональных данных</label>
-    </p>
-    <button class='btn feedback__btn'>Отправить</button>
+    <div class='feedback__wrapper'>
+      <p class='feedback__item feedback__item--flex'>
+        <input type='checkbox' name='feedback__agree' id='feedback__agree'>
+        <label class='feedback__agree' for='feedback__agree'>Принимаю <a class='feedback__link' href='#'>соглашение</a> об использовании персональных данных</label>
+      </p>
+      <button class='btn feedback__btn'>Отправить</button>
+    </div>
   </form>
 </section>
 <section class='map'>
@@ -310,10 +312,6 @@
   <div class='footer_develper'>
     <span class='footer__info'>Разработка и внедрение —  </span>
     <span class='footer__dev'>media bay</span>
-  </div>
-  <div class='footer_develper'>
-    <span class='footer__info'>Дизайн —  </span>
-    <span class='footer__design'></span>
   </div>
 </footer>
 <script src="js/main.js"></script>
