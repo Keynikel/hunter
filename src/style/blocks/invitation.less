@@ -133,6 +133,7 @@
     margin-top: 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     p, button {
       margin: 0;
@@ -158,22 +159,42 @@
     .invitation__agree {
       margin-top: 0px;
       padding-left: 30px;
+      max-width: 250px;
       font-size: 1rem;
     }
 
     .invitation__agree::before {
-      top: 0px;
-      left: 4px;
+      top: 25px;
+      left: 28px;
       width: 18px;
       height: 18px;
     }
 
     input[type=checkbox]:checked+.invitation__agree::after {
-      top: 4px;
-      left: 9px;
+      top: 6px;
+      left: 8px;
     }
 
 
   }
 
+}
+
+
+@media (min-width: @large) {
+  .invitation--sm  {
+    padding: 75px 200px 60px;
+  }
+
+  .invitation__header {
+    margin: 0;
+    margin-left: 39px;
+    padding-bottom: 25px;
+    font-size: 3.6rem;
+    line-height: 4rem;
+
+    &::after {
+     height: 3px;
+    }
+  }
 }
