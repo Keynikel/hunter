@@ -31,7 +31,7 @@
   li.slick-active::before {
     content: "";
     position: absolute;
-    left: -9px;
+    left: -10px;
     top: -9px;
     width: 25px;
     height: 25px;
@@ -42,6 +42,17 @@
 
 @media (min-width: @desktop) {
   .slick-dots {
-    padding-top: 146px;
+    padding-top: 128px;
+
+    li.slick-active::before {
+      left: 15px;
+      top: 16px;
+    }
+  }
+}
+
+@media (min-width: @large) {
+  .slick-dots {
+    padding-top: 68px;
   }
 }

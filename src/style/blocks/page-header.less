@@ -40,6 +40,7 @@
 
   .top__wrapper {
     padding-top: 22px;
+    background-image: url('../img/slider-back--desktop.png');
   }
 
   .page-header {
@@ -63,5 +64,31 @@
     height: 60px;
     background-position: 50% 37%;
     background-size: 15px 10px;
+  }
+}
+
+@media (min-width: @large)  {
+  .top__wrapper {
+    min-height: 900px;
+    height: 90vh;
+  }
+
+  .page-header {
+    padding-top: 25px;
+
+    img {
+      margin-left: 90px;
+      width: 280px;
+      height: 58px;
+    }
+  }
+
+  .section-control {
+    left: 89px;
+    bottom: -35px;
+    width: 83px;
+    height: 75px;
+    background-position: 50% 40%;
+    background-size: 25px 17px;
   }
 }
