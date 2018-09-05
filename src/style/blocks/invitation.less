@@ -197,4 +197,47 @@
      height: 3px;
     }
   }
+
+  .invitation__form {
+    max-width: 85%;
+    margin-left: 39px;
+    margin-right: auto;
+  }
+
+  .invitation__item {
+    margin-top: 43px;
+
+    input[type='text'],
+    input[type='email'],
+    input[type='tel']  {
+      font-size: 1.6rem;
+    }
+
+    .invitation__agree {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+
+    .invitation__agree::before {
+      top: 29px;
+      left: 25px;
+    }
+
+    input[type=checkbox]:checked+.invitation__agree::after {
+      top: 9px;
+      left: 5px;
+    }
+  }
+
+  .invitation__wrapper {
+    margin-top: 50px;
+  }
+
+  .invitation__btn {
+    min-height: 48px;
+    min-width: 157px;
+    font-size: 1.6rem;
+  }
+
+
 }
