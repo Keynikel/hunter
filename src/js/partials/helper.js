@@ -15,8 +15,26 @@ $(document).ready(function(){
   });
 
   $('.blog__items').slick({
+    mobileFirst: true,
     arrows: false,
-    dots: true
+    dots: true,
+    infinite: false,
+    slidesToShow: 1.1,
+    responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1.3
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1.5
+      }
+    }
+  ]
+
   });
 });
 

@@ -4,19 +4,19 @@
     <form action='#' class='feedback__form'>
       <p class='feedback__item'>
         <label for='feedback__name' class='visually-hidden'>Представьтесь</label>
-        <input type='text' name='feedback__name' id='feedback__name' placeholder='Представьтесь'>
+        <input type='text' name='feedback__name' id='feedback__name' placeholder='Представьтесь' required>
       </p>
       <p class='feedback__item'>
         <label for='feedback__email' class='visually-hidden'>Адрес электронной почты</label>
-        <input type='email' name='feedback__email' id='feedback__email' placeholder='Адрес электронной почты'>
+        <input type='email' name='feedback__email' id='feedback__email' placeholder='Адрес электронной почты' required>
       </p>
       <p class='feedback__item'>
         <label for='feedback__phone' class='visually-hidden'>Контактный телефон</label>
-        <input type='tel' name='feedback__phone' id='feedback__phone' placeholder='Контактный телефон'>
+        <input type='tel' name='feedback__phone' id='feedback__phone' placeholder='Контактный телефон' required>
       </p>
       <div class='feedback__wrapper'>
         <p class='feedback__item feedback__item--flex'>
-          <input type='checkbox' name='feedback__agree' id='feedback__agree'>
+          <input type='checkbox' name='feedback__agree' id='feedback__agree' required>
           <label class='feedback__agree' for='feedback__agree'>Принимаю <a class='feedback__link' href='#'>соглашение</a> об использовании персональных данных</label>
         </p>
         <button class='btn feedback__btn'>Отправить</button>
