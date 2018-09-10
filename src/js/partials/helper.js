@@ -30,13 +30,14 @@ $(document).ready(function(){
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 1.5
+        slidesToShow: 1.7
       }
     }
   ]
 
   });
 });
+
 
 /* begin Scroll Down Button */
 (function() {

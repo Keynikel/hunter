@@ -7,3 +7,4 @@
 //= ../slick/slick.min.js
 //= partials/helper.js
 //= partials/ajax.js
+//= partials/yandex.js
