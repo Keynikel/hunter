@@ -36,21 +36,46 @@
             <div class='hole'><span class='hole__blur'></span></div>
           </div>
         </div>
+      </div>
+      <div class='slider__item'>
+        <div class='slider__wrapper'>
+          <h2 class='slider__header'>Информационная безопасность</h2>
+          <div class='slider__text'>
+            Мы обеспечиваем информационную безопасность на всех уровнях&nbsp;и комплексно подходим к решению проблем, чтобы сделать ваш рабочий процесс комфортным.
+          </div>
+          <button class='btn slider__btn'>Пригласить специалиста</button>
+          <div class='hole-wrapper'>
+            <div class='hole'><span class='hole__blur'></span></div>
+          </div>
   
+          <div class='hole-wrapper--big'>
+            <div class='hole'><span class='hole__blur'></span></div>
+          </div>
+  
+          <div class='hole-wrapper--small'>
+            <div class='hole'><span class='hole__blur'></span></div>
+          </div>
+        </div>
       </div>
       <div class='slider__item'>
-        <h2 class='slider__header'>Информационная безопасность</h2>
-        <p class='slider__text'>
-          Мы обеспечиваем информационную безопасность на всех уровнях&nbsp; и комплексно подходим к решению проблем, чтобы сделать ваш рабочий процесс комфортным.
-        </p>
-        <button class='btn slider__btn'>Пригласить специалиста</button>
-      </div>
-      <div class='slider__item'>
-        <h2 class='slider__header'>Информационная безопасность</h2>
-        <p class='slider__text'>
-          Мы обеспечиваем информационную безопасность на всех уровнях&nbsp;и комплексно подходим к решению проблем, чтобы сделать ваш рабочий процесс комфортным.
-        </p>
-        <button class='btn slider__btn'>Пригласить специалиста</button>
+        <div class='slider__wrapper'>
+          <h2 class='slider__header'>Информационная безопасность</h2>
+          <div class='slider__text'>
+            Мы обеспечиваем информационную безопасность на всех уровнях&nbsp;и комплексно подходим к решению проблем, чтобы сделать ваш рабочий процесс комфортным.
+          </div>
+          <button class='btn slider__btn'>Пригласить специалиста</button>
+          <div class='hole-wrapper'>
+            <div class='hole'><span class='hole__blur'></span></div>
+          </div>
+  
+          <div class='hole-wrapper--big'>
+            <div class='hole'><span class='hole__blur'></span></div>
+          </div>
+  
+          <div class='hole-wrapper--small'>
+            <div class='hole'><span class='hole__blur'></span></div>
+          </div>
+        </div>
       </div>
     </div>
     <button class='section-control' id='section-control'></button>
@@ -85,25 +110,25 @@
     </li>
     <li class='invitation invitation--sm'>
       <h2 class='invitation__header'>Пригласить специалиста</h2>
-      <form action='#' class='invitation__form'>
+      <form type='POST' action='send.php' class='invitation__form'>
         <p class='invitation__item'>
           <label for='invitation__name' class='visually-hidden'>Представьтесь</label>
-          <input type='text' name='invitation__name' id='invitation__name' placeholder='Представьтесь'>
+          <input type='text' name='invitation__name' id='invitation__name' placeholder='Представьтесь' required>
         </p>
         <p class='invitation__item'>
           <label for='invitation__email' class='visually-hidden'>Адрес электронной почты</label>
-          <input type='email' name='invitation__email' id='invitation__email' placeholder='Адрес электронной почты'>
+          <input type='email' name='invitation__email' id='invitation__email' placeholder='Адрес электронной почты' required>
         </p>
         <p class='invitation__item'>
           <label for='invitation__phone' class='visually-hidden'>Контактный телефон</label>
-          <input type='tel' name='invitation__phone' id='invitation__phone' placeholder='Контактный телефон'>
+          <input type='tel' name='invitation__phone' id='invitation__phone' placeholder='Контактный телефон' required>
         </p>
         <div class='invitation__wrapper'>
           <p class='invitation__item'>
-            <input type='checkbox' name='invitation__agree' id='invitation__agree'>
+            <input type='checkbox' name='invitation__agree' id='invitation__agree' required>
             <label class='invitation__agree' for='invitation__agree'>Принимаю <a class='invitation__link' href='#'>соглашение</a> об использовании персональных данных</label>
           </p>
-          <button class='btn invitation__btn'>Отправить</button>
+          <button type='submit' class='btn invitation__btn' id='invitation'>Отправить</submit>
         </div>
       </form>
     </li>
@@ -141,24 +166,24 @@
 </section>
 <section class='invitation'>
   <h2 class='invitation__header'>Пригласить специалиста</h2>
-  <form action='#' class='invitation__form'>
+  <form type='POST' class='invitation__form'>
     <p class='invitation__item'>
       <label for='invitation__name' class='visually-hidden'>Представьтесь</label>
-      <input type='text' name='invitation__name' id='invitation__name' placeholder='Представьтесь'>
+      <input type='text' name='invitation__name' id='invitation__name' placeholder='Представьтесь' required>
     </p>
     <p class='invitation__item'>
       <label for='invitation__email' class='visually-hidden'>Адрес электронной почты</label>
-      <input type='email' name='invitation__email' id='invitation__email' placeholder='Адрес электронной почты'>
+      <input type='email' name='invitation__email' id='invitation__email' placeholder='Адрес электронной почты' required>
     </p>
     <p class='invitation__item'>
       <label for='invitation__phone' class='visually-hidden'>Контактный телефон</label>
-      <input type='tel' name='invitation__phone' id='invitation__phone' placeholder='Контактный телефон'>
+      <input type='tel' name='invitation__phone' id='invitation__phone' placeholder='Контактный телефон' required>
     </p>
     <p class='invitation__item'>
-      <input type='checkbox' name='invitation__agree' id='invitation__agree'>
-      <label class='invitation__agree' for='invitation__agree'>Принимаю <a class='invitation__link' href='#'>соглашение</a> об использовании персональных данных</label>
+      <input type='checkbox' name='invitation__agree-2' id='invitation__agree-2' required >
+      <label class='invitation__agree' for='invitation__agree-2'>Принимаю <a class='invitation__link' href='#'>соглашение</a> об использовании персональных данных</label>
     </p>
-    <button class='btn invitation__btn'>Отправить</button>
+    <button class='btn invitation__btn' id='invitation'>Отправить</button>
   </form>
 </section>
 <section class='slider--quote'>
@@ -317,19 +342,19 @@
     <form action='#' class='feedback__form'>
       <p class='feedback__item'>
         <label for='feedback__name' class='visually-hidden'>Представьтесь</label>
-        <input type='text' name='feedback__name' id='feedback__name' placeholder='Представьтесь'>
+        <input type='text' name='feedback__name' id='feedback__name' placeholder='Представьтесь' required>
       </p>
       <p class='feedback__item'>
         <label for='feedback__email' class='visually-hidden'>Адрес электронной почты</label>
-        <input type='email' name='feedback__email' id='feedback__email' placeholder='Адрес электронной почты'>
+        <input type='email' name='feedback__email' id='feedback__email' placeholder='Адрес электронной почты' required>
       </p>
       <p class='feedback__item'>
         <label for='feedback__phone' class='visually-hidden'>Контактный телефон</label>
-        <input type='tel' name='feedback__phone' id='feedback__phone' placeholder='Контактный телефон'>
+        <input type='tel' name='feedback__phone' id='feedback__phone' placeholder='Контактный телефон' required>
       </p>
       <div class='feedback__wrapper'>
         <p class='feedback__item feedback__item--flex'>
-          <input type='checkbox' name='feedback__agree' id='feedback__agree'>
+          <input type='checkbox' name='feedback__agree' id='feedback__agree' required>
           <label class='feedback__agree' for='feedback__agree'>Принимаю <a class='feedback__link' href='#'>соглашение</a> об использовании персональных данных</label>
         </p>
         <button class='btn feedback__btn'>Отправить</button>
@@ -337,8 +362,18 @@
     </form>
   </div>
 </section>
-<section class='map'>
-
+<svg class="defs-only" style='display:none;'>
+  <filter id="monochrome" color-interpolation-filters="sRGB"
+          x="0" y="0" height="100%" width="100%">
+          <feColorMatrix
+          type="matrix"
+          values="0 1.0 0 0 0
+                  0 1.0 0 0 0
+                  0 0.6 1 0 0
+                  0 0 0 1 0"/>
+  </filter>
+</svg>
+<section class='map' id='map' width='600px' height='100px'>
 </section>
 <footer class='footer'>
   <div class='footer_develper'>
@@ -350,6 +385,14 @@
     <span class='footer__dev'>media bay</span>
   </div>
 </footer>
+<div class='modal-mask'>
+  <section class='modal'>
+    <h2 class='modal__header'> Заявка принята </h2>
+    <p class='modal__text'> Спасибо за ваш выбор! Специалист T.Hunter свяжется с вами в ближайшее время</p>
+    <button class='modal__close'>Закрыть</button>
+  </section>
+</div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
