@@ -99,6 +99,25 @@
   .hole-wrapper--small {
     display: block;
   }
+
+  .slider__wrapper {
+    &--second {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 532px;
+        height: 762px;
+        bottom: 0;
+        right: 0;
+        background-image: url('/img/slide-object.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+      }
+    }
+  }
 }
 
 @media (min-width: @large) {

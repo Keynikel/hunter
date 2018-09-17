@@ -61,3 +61,25 @@ $(document).ready(function(){
   btnScrollDown.addEventListener('click', scrollDown);
 })();
 /* end Scroll Down Button */
+
+/* переключатель фона для слайдера*/
+$(document).ready(function(){
+  $('.slick-dots li').on('click', function(){
+      if ($('.slick-dots').children().eq(1).hasClass('slick-active')) {
+    $('.top__wrapper').addClass('top__wrapper--second');
+  }
+  else {
+    $('.top__wrapper').removeClass('top__wrapper--second');
+  }
+  });
+
+  $('.slider__items').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    if ($('.slick-dots').children().eq(0).hasClass('slick-active')) {
+      $('.top__wrapper').addClass('top__wrapper--second');
+    }
+    else {
+      $('.top__wrapper').removeClass('top__wrapper--second');
+    }
+  })
+
+});

@@ -4,6 +4,13 @@
   background-position: top center;
   background-size: cover;
   position: relative;
+
+  &--second {
+    background-image: url('../img/slider-back--second.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 .page-header {
@@ -33,6 +40,10 @@
     background-image: none;
     background-color: @second-color;
     background-image: url('../img/slider-back--medium.png');
+
+    &--second {
+      background-image: url('../img/slider-back--medium-second.png');
+    }
   }
 }
 
@@ -41,6 +52,29 @@
   .top__wrapper {
     padding-top: 22px;
     background-image: url('../img/slider-back--desktop.png');
+
+    &--second {
+      position: relative;
+
+      .slider {
+        position: relative;
+        z-index: 10;
+      }
+
+      &::after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 500px;
+        height: 700px;
+        background-image: url('../img/slide-object.png');
+        background-size: 100%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+      }
+    }
   }
 
   .page-header {
@@ -71,6 +105,13 @@
   .top__wrapper {
     min-height: 900px;
     height: 90vh;
+
+    &--second {
+
+      &::after {
+        right: 10%;
+      }
+    }
   }
 
   .page-header {
